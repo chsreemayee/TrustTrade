@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0F5C5C;
+  --color-accent: #F2A900;
+  --color-bg: #FFF8EE;
+  --color-card: #FFFFFF;
+  --color-border: #E5E1D8;
+  --color-text: #1F2933;
+  --color-text-secondary: #52606D;
+}
+
+body {
+  background-color: #FFF8EE;
+  color: #1F2933;
+  line-height: 1.5;
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for clean mobile appearance */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E1D8;
+  border-radius: 4px;
+}
+
+/* Ensure minimum touch target heights and contrast */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

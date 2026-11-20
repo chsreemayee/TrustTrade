@@ -1,0 +1,16 @@
+{
+  "name": "TrustTrade",
+  "short_name": "TrustTrade",
+  "description": "Voice-first safe investment learning and scam detection app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8EE",
+  "theme_color": "#0F5C5C",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+code,pattern,languages,weight,is_always_scam,lesson_id,detector,label_en
+GUARANTEED_RETURN,assured|guarantee(d)?|fixed return|pakka (profit|munafa)|100% (profit|return)|गारंटी|पक्का मुनाफा|निश्चित (रिटर्न|मुनाफा)|గ్యారెంటీ|గ్యారంటీ|హామీ|ఖచ్చితమైన లాభం|పక్కా లాభం,en|hi|te,2,false,scam_guaranteed_returns,phrase+extract,Guaranteed or fixed returns
+HIGH_RETURN,,all,2,false,scam_guaranteed_returns,code,Return of more than 3% a month or double in X days
+SEBI_NOT_FOUND,,all,2,false,scam_impersonation,code,Claims SEBI registration but not in SEBI list
+PERSONAL_UPI,"(personal|private) (savings |bank )?account|account (no|number)\.?\s*\d{9,18}|\b[A-Z]{4}0[A-Z0-9]{6}\b|निजी (बैंक )?खाते|ప్రైవేట్ ఖాతా|వ్యక్తిగత ఖాతా",en|hi|te,2,false,scam_pay_to_receive,phrase+code,Pay to a personal UPI ID or personal bank account
+APK_INSTALL,\.apk\b|apk file|download (our|the|this) (trading )?app from (this|the) link|ఈ లింక్ నుండి యాప్|लिंक से ऐप,en|hi|te,2,false,scam_fake_apps,phrase+code,Install an app from a link or APK not the Play Store
+OTP_PIN_SCREENSHARE,\botp\b|upi pin|\bpin\b|anydesk|teamviewer|quick ?support|screen ?shar(e|ing)|ओटीपी|यूपीआई पिन|ఓటీపీ|యూపీఐ పిన్|UPI పిన్,en|hi|te,2,false,scam_pay_to_receive,phrase,Asks for OTP or UPI PIN or a screen-sharing app
+IMPERSONATION,sebi (officer|official|approved tip)|from sebi|nse (official|officer)|ambani|tata (sir|investment)|adani|rakesh jhunjhunwala|zerodha (team|support) tip|सेबी अधिकारी|అంబానీ|సెబీ అధికారి,en|hi|te,2,false,scam_impersonation,phrase+extract,Uses a celebrity or SEBI or NSE or broker name to sell
+URGENCY,only today|today only|last chance|last \d+ (seats|slots)|limited (seats|slots|offer)|hurry|act now|right now|abhi join|buy before|before (monday|tuesday|wednesday|thursday|friday|saturday|sunday|tomorrow)|सिर्फ आज|आज ही|आखिरी मौका|जल्दी करें|सीटें सीमित|तुरंत|ఈ రోజు మాత్రమే|ఈరోజే|చివరి అవకాశం|త్వరపడండి|సీట్లు పరిమితం|(సోమ|మంగళ|బుధ|గురు|శుక్ర|శని|ఆది)వారం లోపు|రేపటి లోపు|ఇప్పుడే,en|hi|te,1,false,,phrase,Pressure to act fast
+VIP_GROUP,\bvip\b|insider tip|operator (stock|tip)|jackpot( stock)?|secret tip|वीआईपी|इनसाइडर|ऑपरेटर|जैकपॉट|జాక్‌పాట్|ఇన్‌సైడర్|ఆపరేటర్|రహస్య,en|hi|te,1,false,scam_vip_groups,phrase,VIP group or insider tip or operator stock
+GROUP_MOVE,(join|move to|add you to) (our )?(telegram|whatsapp)|telegram (group|channel)|टेलीग्राम|టెలిగ్రామ్,en|hi|te,1,false,scam_vip_groups,phrase,Asks to move to a Telegram or WhatsApp group
+JOIN_FEE,(registration|membership|joining|activation) (fee|charge)|\bmembership\b|रजिस्ट्रेशन फीस|सदस्यता शुल्क|రిజిస్ట్రేషన్ ఫీజు|సభ్యత్వ రుసుము|మెంబర్‌షిప్,en|hi|te,1,false,scam_pay_to_receive,phrase+extract,Small registration or membership fee to join
+PROFIT_SCREENSHOTS,,all,1,false,scam_vip_groups,extract,Screenshots of others' profits as proof
+ASM_GSM_LIST,,all,1,false,,phase2,Stock on NSE ASM/GSM surveillance list
+SHORT_LINK,bit\.ly|tinyurl|t\.co/|cutt\.ly|rb\.gy|is\.gd|goo\.gl,all,0.5,false,,phrase+code,Shortened or look-alike link
+UNKNOWN_NUMBER,,all,0.5,false,,extract,Message from an unknown number
+SPELLING_OFFICIAL,,all,0.5,false,,extract,Spelling mistakes in a message claiming to be official
+ALWAYS_DOUBLE_MONEY,double your money|money double|paisa double|पैसा डबल|पैसे दोगुने|డబ్బు రెట్టింపు|రెట్టింపు,en|hi|te,2,true,scam_guaranteed_returns,phrase+code,Send money and get it doubled
+ALWAYS_PAY_TO_RECEIVE,"pay .{0,40}(fee|charge|tax).{0,30}to (receive|withdraw|release|unlock)|(fee|charge|tax) to (receive|withdraw|release) (your )?(money|profit|returns|bonus)",en,2,true,scam_pay_to_receive,phrase,Pay a fee to receive money or profits
+ALWAYS_UPI_PIN_TO_RECEIVE,"enter (your )?upi pin to (receive|claim|get)|यूपीआई पिन डाल.{0,30}(पाएं|पाने)|UPI PIN ఎంటర్ చేసి.{0,30}పొందండి",en|hi|te,2,true,scam_pay_to_receive,phrase,Enter your UPI PIN to receive money
+ALWAYS_OTP_FOR_RETURNS,"(share|send|tell) (the |your )?otp.{0,40}(receive|returns|profit|bonus|credit)",en,2,true,scam_pay_to_receive,phrase,Share an OTP to receive returns

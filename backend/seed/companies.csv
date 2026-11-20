@@ -1,0 +1,21 @@
+ticker,name,sector,tile_colour
+RELIANCE.NS,Reliance Industries,Energy and retail,#1F4E9C
+TCS.NS,Tata Consultancy Services,IT services,#3D3D99
+INFY.NS,Infosys,IT services,#007CC3
+HDFCBANK.NS,HDFC Bank,Bank,#004C8F
+ICICIBANK.NS,ICICI Bank,Bank,#B02A30
+SBIN.NS,State Bank of India,Bank,#2D6DB5
+ITC.NS,ITC,Consumer goods,#1A5E3A
+HINDUNILVR.NS,Hindustan Unilever,Consumer goods,#1F36C7
+BHARTIARTL.NS,Bharti Airtel,Telecom,#E40000
+LT.NS,Larsen & Toubro,Construction,#0E4C92
+MARUTI.NS,Maruti Suzuki,Cars,#173F8A
+BAJAJ-AUTO.NS,Bajaj Auto,Two-wheelers,#005BAC
+HEROMOTOCO.NS,Hero MotoCorp,Two-wheelers,#E31E24
+ASIANPAINT.NS,Asian Paints,Paints,#E2231A
+TITAN.NS,Titan Company,Watches and jewellery,#6B4226
+BRITANNIA.NS,Britannia Industries,Biscuits and food,#C8102E
+NESTLEIND.NS,Nestle India,Food,#6E6E6E
+DABUR.NS,Dabur India,Health and food,#2E7D32
+COALINDIA.NS,Coal India,Mining,#333333
+IRCTC.NS,IRCTC,Railway tickets and food,#1B3A6B

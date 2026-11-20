@@ -1,0 +1,33 @@
+# Render Blueprint for the TrustTrade backend.
+# Put this file at the ROOT of your GitHub repo (next to /frontend and /backend), then
+# Render → New → Blueprint → pick the repo. Values marked sync: false are asked for once.
+services:
+  - type: web
+    name: trusttrade-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.1
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY          # service_role / secret key, backend only
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CORS_ORIGINS          # e.g. https://trusttrade.vercel.app
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_TOKEN_SECRET
+        generateValue: true
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: STORE_BACKEND
+        value: supabase

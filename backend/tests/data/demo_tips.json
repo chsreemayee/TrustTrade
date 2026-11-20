@@ -1,0 +1,106 @@
+[
+ {
+  "id": 1,
+  "lang": "en",
+  "text": "Join our VIP WhatsApp group. Assured 20% monthly returns. Pay ₹999 membership to rahulprofits@ybl",
+  "expected_signs": [
+   "GUARANTEED_RETURN",
+   "HIGH_RETURN",
+   "VIP_GROUP",
+   "JOIN_FEE",
+   "PERSONAL_UPI"
+  ],
+  "expected_score": 8,
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 1,
+  "lang": "te",
+  "text": "మా VIP వాట్సాప్ గ్రూప్‌లో చేరండి. నెలకు 20% హామీ లాభం. ₹999 మెంబర్‌షిప్ rahulprofits@ybl కు చెల్లించండి",
+  "expected_signs": [
+   "GUARANTEED_RETURN",
+   "HIGH_RETURN",
+   "VIP_GROUP",
+   "JOIN_FEE",
+   "PERSONAL_UPI"
+  ],
+  "expected_score": 8,
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 2,
+  "lang": "en",
+  "text": "Send ₹5,000 and get ₹10,000 back in 7 days",
+  "expected_always_rule": "ALWAYS_DOUBLE_MONEY",
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 2,
+  "lang": "te",
+  "text": "₹5,000 పంపండి, 7 రోజుల్లో ₹10,000 తిరిగి పొందండి",
+  "expected_always_rule": "ALWAYS_DOUBLE_MONEY",
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 3,
+  "lang": "en",
+  "text": "Only today: install our trading app from bit.ly/xx-trade.apk and get ₹2,000 bonus",
+  "expected_signs": [
+   "APK_INSTALL",
+   "URGENCY",
+   "SHORT_LINK"
+  ],
+  "expected_score": 3.5,
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 3,
+  "lang": "te",
+  "text": "ఈ రోజు మాత్రమే: bit.ly/xx-trade.apk నుండి మా ట్రేడింగ్ యాప్ ఇన్‌స్టాల్ చేసి ₹2,000 బోనస్ పొందండి",
+  "expected_signs": [
+   "APK_INSTALL",
+   "URGENCY",
+   "SHORT_LINK"
+  ],
+  "expected_score": 3.5,
+  "expected_verdict": "scam"
+ },
+ {
+  "id": 4,
+  "lang": "en",
+  "text": "My cousin got an insider tip, this small share will go up a lot. Buy before Friday",
+  "expected_signs": [
+   "VIP_GROUP",
+   "URGENCY"
+  ],
+  "expected_score": 2,
+  "expected_verdict": "careful"
+ },
+ {
+  "id": 4,
+  "lang": "te",
+  "text": "మా బంధువుకి ఒక ఇన్‌సైడర్ టిప్ వచ్చింది, ఈ చిన్న షేర్ బాగా పెరుగుతుంది. శుక్రవారం లోపు కొనండి",
+  "expected_signs": [
+   "VIP_GROUP",
+   "URGENCY"
+  ],
+  "expected_score": 2,
+  "expected_verdict": "careful"
+ },
+ {
+  "id": 5,
+  "lang": "en",
+  "text": "Your SIP of ₹500 in a mutual fund was debited on 5 Nov. Ref 12345",
+  "expected_signs": [],
+  "expected_score": 0,
+  "expected_verdict": "no_signs"
+ },
+ {
+  "id": 5,
+  "lang": "te",
+  "text": "మీ ₹500 SIP మ్యూచువల్ ఫండ్ మొత్తం 5 నవంబర్‌న డెబిట్ అయింది. Ref 12345",
+  "expected_signs": [],
+  "expected_score": 0,
+  "expected_verdict": "no_signs"
+ }
+]

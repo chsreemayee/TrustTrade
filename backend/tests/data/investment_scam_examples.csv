@@ -1,0 +1,4 @@
+id,language,source,text,scam_type,expected_verdict
+ISE001,en,survey,"Join VIP stock group. Assured 20% monthly profit. Pay Rs 999 to join.",vip_group,scam
+ISE002,te,news,"మీ డబ్బు 30 రోజుల్లో రెట్టింపు",double_money,scam
+ISE003,hi,sebi_warning,"Download our trading app from this link and get Rs 2000 bonus",fake_app,scam
